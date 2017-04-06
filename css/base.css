@@ -1,0 +1,14 @@
+body {
+	background: url('../image/background.jpg');
+  }
+#container {
+	margin:200px auto 0;
+	width: 1000px;
+	display: block;
+	text-align:center;
+}
+#container > header {
+	text-transform: uppercase;
+	font: bold 45px verdana;
+	color: white;
+}

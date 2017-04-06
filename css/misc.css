@@ -1,0 +1,21 @@
+input[type="checkbox"]{
+	margin-botton: 10px;
+	display: inline-block;
+}
+.check-age-message {
+	text-transform: uppercase;
+	font: bold 20px verdana;
+	color: #009845;
+}
+.button {
+	background-color: #009845;
+	padding: 10px 90px;
+	margin: 25px 0 10px;
+	border: 0;
+	cursor: pointer;
+}
+.dropdown-round {
+	border-radius: 10px;
+	padding: 2px;
+	width: 190px;
+}

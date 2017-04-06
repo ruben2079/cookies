@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1024px) {
+	.dropdown-round {
+		display: inherit;
+		margin: 10px auto;
+	}
+	#container {
+		width: 80%;
+	}
+}

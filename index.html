@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Age Gate Builder</title>
+  <meta name="description" content="Age Gate Builder">
+  <meta name="author" content="Ruben Guzman">
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="script/check-age.js" defer></script>
+</head>
+<body>
+	<main>
+		<section id="container">
+			<header>
+				<img src="image/logo.png" />
+				<p>Welcome to brooklyn</p>
+			</header>
+			<form name="checkAge" id="checkAge">
+				<p class="white-color">You must be of legal drinking age to enter to this site</p>
+				<select class="dropdown-round" name="month" id="month">
+				</select>
+				<select class="dropdown-round" name="day" id="day">
+				</select>
+				<select class="dropdown-round" name="year" id="year">
+				</select>
+				<br />
+				<button type="button" class="button bold white-color" onclick="validateForm.checkPersonAge()">Enter</button>
+				<br />
+				<input name="checkbox" id="checkbox" type="checkbox" /><span class="white-color">Remember me</span>
+				<br />
+				<br />
+				<a href="javascript:void(0);" onclick="validateForm.notLegalAge()" class="uppercase green-color no-underline">I am not legal drinking age</a>
+			</form>
+			<section id="successContainer" class="check-age-message">
+				<p>Welcome</p>
+			</section>
+			<section id="errorContainer" class="check-age-message">
+				<p>We are sorry, but you are not allowed to access the page</p>
+			</section>
+		</section>
+	</main>
+</body>
+</html>

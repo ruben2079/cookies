@@ -1,0 +1,15 @@
+.bold {
+	font: bold 12px verdana;
+ }
+.white-color {
+	color: white;
+}
+.green-color {
+	color:#009845;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.no-underline {
+	text-decoration: none;
+}
