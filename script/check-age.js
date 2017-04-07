@@ -18,7 +18,7 @@ validateForm.init = () => {
 	successContainer.style.display = 'none';
 	
 	//Generate dropdowns
-	for(var i = year - 100; i <= year; i++){
+	for(var i = year - 100; i < year; i++){
 		let optionEl = document.createElement('option');
 			optionEl.setAttribute('value',i);
 			optionEl.text = i;
@@ -66,7 +66,7 @@ validateForm.checkPersonAge = () =>  {
 		daySelected = daySel.options[daySel.selectedIndex].value,
 		monthSelected = monthSel.options[monthSel.selectedIndex].value,
 		yearSelected = yearSel.options[yearSel.selectedIndex].value,
-		dateString = yearSelected + "/" + daySelected + "/" + monthSelected;
+		dateString = yearSelected + "/" + monthSelected + "/" + daySelected;
 		dateString.toString();
 		
 	let birthDate = new Date(dateString),
@@ -81,7 +81,7 @@ validateForm.checkPersonAge = () =>  {
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-
+	console.log("Age: "+ age);
     if(age > 20){
 		checkAgeForm.style.display = 'none';
 		successContainer.style.display = 'block';
