@@ -81,7 +81,7 @@ validateForm.checkPersonAge = () =>  {
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
-	console.log("Age: "+ age);
+
     if(age > 20){
 		checkAgeForm.style.display = 'none';
 		successContainer.style.display = 'block';
